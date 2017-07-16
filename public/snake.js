@@ -88,12 +88,9 @@ function main() {
 		delete keystate[evt.keyCode];
 	});
 
-	ctx.fillStyle = "#000";
-	ctx.fillText("Press Enter", canvas.height);
-	if(keystate[KEY_ENTER]){
-		init();
-		loop();
-	}
+	init();
+	loop();
+
 
 }
 
