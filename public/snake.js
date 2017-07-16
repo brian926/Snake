@@ -2,7 +2,7 @@ var COLS=26, ROWS=26;
 var EMPTY=0, SNAKE=1, FRUIT=2;
 var LEFT=0, UP=1, RIGHT=2, DOWN=3;
 
-var KEY_LEFT=37, KEY_UP=38, KEY_RIGHT=39, KEY_DOWN=40;
+var KEY_ENTER=13, KEY_LEFT=37, KEY_UP=38, KEY_RIGHT=39, KEY_DOWN=40;
 
 var grid = {
 	width: null,
@@ -88,9 +88,13 @@ function main() {
 		delete keystate[evt.keyCode];
 	});
 
+	ctx.fillStyle = "#000";
+	ctx.fillText("Press Enter", canvas.height);
+	if(keystate[KEY_ENTER]){
+		init();
+		loop();
+	}
 
-	init();
-	loop();
 }
 
 function init() {

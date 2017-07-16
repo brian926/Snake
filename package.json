@@ -1,0 +1,28 @@
+{
+  "name": "snake",
+  "version": "1.0.0",
+  "description": "Making a simple Javascript snake game",
+  "main": "server.js",
+  "dependencies": {
+    "node": "^0.0.0",
+    "node-static": "^0.7.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brian926/Snake.git"
+  },
+  "keywords": [
+    "\"heroku\""
+  ],
+  "author": "\"Brian\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brian926/Snake/issues"
+  },
+  "homepage": "https://github.com/brian926/Snake#readme"
+}
