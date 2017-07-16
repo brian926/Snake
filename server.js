@@ -1,6 +1,6 @@
 const static = require('node-static');
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 const file = new static.Server('./public');
 
 require('http').createServer(function (req, res) {
